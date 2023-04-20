@@ -17,21 +17,23 @@ Inicio
 
 
    Enquanto Salario >= 0 faca
+      
+      Escreval ("Qual sua renda mensal ?R$")
+      leia (Salario)
+      
+      Limpatela
 
       Escreval ("Quantos filhos você tem ?")
       leia (Filhos)
 
       Limpatela
-
-      Escreval ("Qual sua renda mensal ?R$")
-      leia (Salario)
-
+      
       Se Salario >=0 entao
          TotalFamilia <- TotalFamilia + 1
          SomaFilhos <- SomaFilhos+Filhos
          SomaSalario <- SomaSalario+Salario
 
-         Limpatela
+  
 
          Se Salario > MaiorSalario entao
             MaiorSalario <- Salario
