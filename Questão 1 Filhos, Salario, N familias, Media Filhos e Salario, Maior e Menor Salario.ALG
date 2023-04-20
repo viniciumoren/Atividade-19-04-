@@ -1,7 +1,7 @@
 Algoritmo "semnome"
-// Disciplina  :  [Linguagem e Lógica de Programação] 
-// Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
+// Professor   : Antonio Carlos Nicolodi
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 18/04/2023
 Var
@@ -11,59 +11,47 @@ Var
 
 
 Inicio
-      MaiorSalario <- 0
-      MenorSalario <- 99999
+   MaiorSalario <- 0
+   MenorSalario <- 99999
 
 
 
-      Resposta <- "Sim"
-      Enquanto Resposta = "Sim" faca
-        Escreval ("Qual sua renda mensal ?R$")
-        leia (Salario)
+   Enquanto Salario >= 0 faca
+
+      Escreval ("Quantos filhos vocÃª tem ?")
+      leia (Filhos)
 
       Limpatela
 
-        Escreval ("Quantos filhos você tem ?")
-        leia (Filhos)
-        
-        TotalFamilia <- TotalFamilia + 1
-        SomaFilhos <- SomaFilhos+Filhos
-        SomaSalario <- SomaSalario+Salario
-      Limpatela
-      
-        Escreval ("Deseja coletar dados de mais uma familia? ")
-        Leia (Resposta)
-        
-      Limpatela
-      
-      Se Salario > MaiorSalario entao
-      MaiorSalario <- Salario
+      Escreval ("Qual sua renda mensal ?R$")
+      leia (Salario)
+
+      Se Salario >=0 entao
+         TotalFamilia <- TotalFamilia + 1
+         SomaFilhos <- SomaFilhos+Filhos
+         SomaSalario <- SomaSalario+Salario
+
+         Limpatela
+
+         Se Salario > MaiorSalario entao
+            MaiorSalario <- Salario
+         Fimse
+
+         Se Salario < MenorSalario entao
+            MenorSalario <- Salario
+         Fimse
       Fimse
-      Se Salario < MenorSalario entao
-      MenorSalario <- Salario
-      Fimse
-
-      FimEnquanto
 
 
-      MediaSalarial <- SomaSalario/TotalFamilia
-      MediaFilhos <- SomaFilhos/TotalFamilia
+   FimEnquanto
 
+   MediaSalarial <- SomaSalario/TotalFamilia
+   MediaFilhos <- SomaFilhos/TotalFamilia
 
-
-
-      
-      
-      Escreval("Total de familias pesquisadas: ",TotalFamilia)
-      Escreval("Média Salarial: ", MediaSalarial ," por familia")
-      Escreval("Media de Filhos: ", MediaFilhos ," por fimilia")
-      Escreval("Maior salário: ",MaiorSalario)
-      Escreval("Menor salário: ",MenorSalario)
-      
-      
-      
-      
-        
-
+   Escreval("Total de familias pesquisadas: ",TotalFamilia)
+   Escreval("MÃ©dia Salarial: ", MediaSalarial ," por familia")
+   Escreval("Media de Filhos: ", MediaFilhos ," por fimilia")
+   Escreval("Maior salÃ¡rio: ",MaiorSalario)
+   Escreval("Menor salÃ¡rio: ",MenorSalario)
 
 Fimalgoritmo
